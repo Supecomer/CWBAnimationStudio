@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0208FC1ECD9BEF00A313AE /* CWBAnimationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0208FB1ECD9BEF00A313AE /* CWBAnimationFramework.framework */; };
+		7D0208FD1ECD9BEF00A313AE /* CWBAnimationFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0208FB1ECD9BEF00A313AE /* CWBAnimationFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DC1C4D91ECC46B9009C7B12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1C4D81ECC46B9009C7B12 /* main.m */; };
 		7DC1C4DC1ECC46B9009C7B12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1C4DB1ECC46B9009C7B12 /* AppDelegate.m */; };
 		7DC1C4DF1ECC46B9009C7B12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1C4DE1ECC46B9009C7B12 /* ViewController.m */; };
@@ -15,7 +17,22 @@
 		7DC1C4E71ECC46B9009C7B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC1C4E51ECC46B9009C7B12 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7D0208FE1ECD9BF000A313AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7D0208FD1ECD9BEF00A313AE /* CWBAnimationFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7D0208FB1ECD9BEF00A313AE /* CWBAnimationFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CWBAnimationFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC1C4D41ECC46B9009C7B12 /* CWBAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWBAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC1C4D81ECC46B9009C7B12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DC1C4DA1ECC46B9009C7B12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0208FC1ECD9BEF00A313AE /* CWBAnimationFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +60,10 @@
 		7DC1C4CB1ECC46B9009C7B12 = {
 			isa = PBXGroup;
 			children = (
+				7D0208FB1ECD9BEF00A313AE /* CWBAnimationFramework.framework */,
 				7DC1C4D61ECC46B9009C7B12 /* CWBAnimationDemo */,
 				7DC1C4D51ECC46B9009C7B12 /* Products */,
+				7DC1C4FB1ECC4AFE009C7B12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +99,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7DC1C4FB1ECC4AFE009C7B12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +116,7 @@
 				7DC1C4D01ECC46B9009C7B12 /* Sources */,
 				7DC1C4D11ECC46B9009C7B12 /* Frameworks */,
 				7DC1C4D21ECC46B9009C7B12 /* Resources */,
+				7D0208FE1ECD9BF000A313AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CTPHKMWQ9;
 				INFOPLIST_FILE = CWBAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CWBAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CTPHKMWQ9;
 				INFOPLIST_FILE = CWBAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CWBAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +344,7 @@
 				7DC1C4ED1ECC46B9009C7B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

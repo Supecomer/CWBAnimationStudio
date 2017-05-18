@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0208F41ECD832900A313AE /* CWBAnimationUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0208F21ECD832900A313AE /* CWBAnimationUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D0208F51ECD832900A313AE /* CWBAnimationUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0208F31ECD832900A313AE /* CWBAnimationUnit.m */; };
 		7DC1C4C51ECC4686009C7B12 /* CWBAnimationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC1C4C31ECC4686009C7B12 /* CWBAnimationFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC1C4F01ECC48E1009C7B12 /* CWBAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC1C4EE1ECC48E1009C7B12 /* CWBAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC1C4F11ECC48E1009C7B12 /* CWBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC1C4EF1ECC48E1009C7B12 /* CWBAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0208F21ECD832900A313AE /* CWBAnimationUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBAnimationUnit.h; sourceTree = "<group>"; };
+		7D0208F31ECD832900A313AE /* CWBAnimationUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBAnimationUnit.m; sourceTree = "<group>"; };
+		7D0208F61ECD837000A313AE /* CWBAnimationUnit+private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWBAnimationUnit+private.h"; sourceTree = "<group>"; };
 		7DC1C4C01ECC4686009C7B12 /* CWBAnimationFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWBAnimationFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC1C4C31ECC4686009C7B12 /* CWBAnimationFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWBAnimationFramework.h; sourceTree = "<group>"; };
 		7DC1C4C41ECC4686009C7B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC1C4EE1ECC48E1009C7B12 /* CWBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBAnimation.h; sourceTree = "<group>"; };
+		7DC1C4EF1ECC48E1009C7B12 /* CWBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBAnimation.m; sourceTree = "<group>"; };
+		7DC1C4FE1ECD7730009C7B12 /* CWBAnimation+private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWBAnimation+private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,9 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D0208F11ECD832900A313AE /* AnimationUnit */ = {
+			isa = PBXGroup;
+			children = (
+				7D0208F21ECD832900A313AE /* CWBAnimationUnit.h */,
+				7D0208F61ECD837000A313AE /* CWBAnimationUnit+private.h */,
+				7D0208F31ECD832900A313AE /* CWBAnimationUnit.m */,
+			);
+			path = AnimationUnit;
+			sourceTree = "<group>";
+		};
 		7DC1C4B61ECC4686009C7B12 = {
 			isa = PBXGroup;
 			children = (
+				7D0208F11ECD832900A313AE /* AnimationUnit */,
+				7DC1C4EE1ECC48E1009C7B12 /* CWBAnimation.h */,
+				7DC1C4FE1ECD7730009C7B12 /* CWBAnimation+private.h */,
+				7DC1C4EF1ECC48E1009C7B12 /* CWBAnimation.m */,
 				7DC1C4C21ECC4686009C7B12 /* CWBAnimationFramework */,
 				7DC1C4C11ECC4686009C7B12 /* Products */,
 			);
@@ -60,6 +84,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC1C4C51ECC4686009C7B12 /* CWBAnimationFramework.h in Headers */,
+				7DC1C4F01ECC48E1009C7B12 /* CWBAnimation.h in Headers */,
+				7D0208F41ECD832900A313AE /* CWBAnimationUnit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +116,7 @@
 		7DC1C4B71ECC4686009C7B12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CWB;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ciome;
 				TargetAttributes = {
@@ -132,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC1C4F11ECC48E1009C7B12 /* CWBAnimation.m in Sources */,
+				7D0208F51ECD832900A313AE /* CWBAnimationUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +276,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CWBAnimationFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CWBAnimationFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -265,6 +295,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CWBAnimationFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CWBAnimationFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,6 +322,7 @@
 				7DC1C4CA1ECC4686009C7B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

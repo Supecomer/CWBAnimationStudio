@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <CWBAnimationFramework/CWBAnimationFramework.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor purpleColor];
+    
+
+    UIImage *image = [UIImage imageNamed:@"huanhuan"];
+    UIImageView *im = [[UIImageView alloc] initWithImage:image];
+    [im setFrame:CGRectMake(10, 10, image.size.width*0.3 , image.size.height*0.3)];
+    [self.view addSubview:im];
+    
+    
+    CWBAnimationUnit  *animationUnit = [[CWBAnimationUnit alloc] init];
+    animationUnit.view = im;
+    [animationUnit moveBy:CGPointMake(100, 100) withTime:10];
+    [CWBAnimation addAnimation:animationUnit];
+    
 }
 
 

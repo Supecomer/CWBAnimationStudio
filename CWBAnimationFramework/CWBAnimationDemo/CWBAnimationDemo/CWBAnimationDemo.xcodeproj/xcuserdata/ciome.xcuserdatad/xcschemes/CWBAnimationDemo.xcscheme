@@ -20,6 +20,20 @@
                ReferencedContainer = "container:CWBAnimationDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7DC1C4BF1ECC4686009C7B12"
+               BuildableName = "CWBAnimationFramework.framework"
+               BlueprintName = "CWBAnimationFramework"
+               ReferencedContainer = "container:../../CWBAnimationFramework/CWBAnimationFramework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

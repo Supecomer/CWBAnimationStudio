@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char CWBAnimationFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CWBAnimationFramework/PublicHeader.h>
 
 
+#import <CWBAnimationFramework/CWBAnimation.h>
+#import <CWBAnimationFramework/CWBAnimationUnit.h>
