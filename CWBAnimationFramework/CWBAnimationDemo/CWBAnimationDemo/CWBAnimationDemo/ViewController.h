@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)moveTo:(id)sender;
+- (IBAction)moveBy:(id)sender;
+- (IBAction)showMoreChange:(id)sender;
 
 @end
 

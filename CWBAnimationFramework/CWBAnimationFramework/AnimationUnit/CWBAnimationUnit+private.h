@@ -9,6 +9,11 @@
 #import "CWBAnimationUnit.h"
 
 typedef void(^CWBAnimationResult)(BOOL isEnd);
+typedef void(^CWBAnimationCompletion)(BOOL finished);
+
+
+
+
 
 @interface CWBAnimationUnit ()
 
@@ -18,10 +23,18 @@ typedef void(^CWBAnimationResult)(BOOL isEnd);
 @property (nonatomic,assign) CGPoint  moveByPoint;
 @property (nonatomic,assign) float    moveBy_xChange;
 @property (nonatomic,assign) float    moveBy_yChange;
-/**
- 读取帧次数
- */
+@property (nonatomic,copy) CWBAnimationCompletion  moveBy_complete;
 @property (nonatomic,assign) NSInteger moveBy_frameTimes;
+
+
+#pragma mark - moveTo
+@property (nonatomic,assign) CGPoint  moveToPoint;
+@property (nonatomic,assign) float    moveTo_xChange;
+@property (nonatomic,assign) float    moveTo_yChange;
+@property (nonatomic,copy) CWBAnimationCompletion  moveTo_complete;
+@property (nonatomic,assign) NSInteger moveTo_frameTimes;
+
+
 
 
 - (void)display:(CWBAnimationResult)result;
